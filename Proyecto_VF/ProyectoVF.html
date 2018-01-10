@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/0a8d39df76.js"></script>
+
+    <title>Instagram</title>
+    <link rel="icon" href="https://instagram-brand.com/wp-content/themes/ig-branding/assets/images/ig-logo-email.png">
+    <link rel="stylesheet" type="text/css" href="/xampp/htdocs/Proyecto_VF/css/Proyecto_VF.css">
+    <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container-fluid">
+
+      <nav class="navbar navbar-light bg-light justify-content-between fixed-top">
+        <div class="navbar-header">
+        <a  class="navbar-brand" href="https://www.instagram.com/">
+          <img src="https://instagram-brand.com/wp-content/themes/ig-branding/assets/images/ig-logo-email.png" width="30" height="30">
+          Instagram
+        </a>
+      </div>
+          
+        
+        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+
+
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-success elmodal" data-toggle="modal" data-target="#exampleModal">
+          Create a new post
+          </button>
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-body">
+                    <textarea class="form-control"></textarea>
+                  </div>
+                  <div id="pad">
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">
+                      <i class="fa fa-camera" aria-hidden="true"></i>         
+                    </button>
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>         
+                    </button>
+                  
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                  </div>
+              </div>
+            </div>
+        </div>
+
+    
+          
+          <button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-cog fa-spin fa-fw" aria-hidden="true"></i>
+          </button>
+
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="btnGroupDrop1">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another Action</a>
+              <a class="dropdown-item" href="#">Something Else Here</a>
+              <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Log Out</a>
+          </div>
+          
+        </div>
+
+      </nav>
+    </div>
+    <div>
+      <br>  
+      <ul class="nav nav-tabs justify-content-center padding" id="myTab" role="tablist">
+        <li class="nav-item">
+          <button class="nav-link btn-light active rounded" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+            <i class="fa fa-align-justify" aria-hidden="true"></i>
+          </button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link btn-light rounded" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+            <i class="fa fa-th" aria-hidden="true"></i>
+          </button>
+        </li>
+        
+      </ul>
+
+      <div class="tab-content">
+        <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="row" style="background-color: #E2E2E2;">
+            <div class="col-3"></div>
+            <div class="col-6">
+              <article>
+                
+                <div class="headel">
+                  <img src="/xampp/htdocs/Proyecto_VF/img/Koala.jpg"  class="rounded-circle float-left" id="Koala"  width="30px" height="30px">
+                  <p class="d-inline-block user">   <strong>Koalauser</strong></p>
+                  
+                </div>
+                <div>
+                  <img class="card-img-top" src="https://st-listas.20minutos.es/images/2014-12/390410/4588247_640px.jpg?1417860326" alt="Card image cap">
+
+                    
+                </div>
+                <div class="postbody">
+                  <p>23 likes</p>
+                  <p class="card-text">This is my first photo in this feed, this is a multi line comment for testing purposes. I am learning to code with breathecode. </p>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i> 
+                  <input type="text" class="comment" placeholder="leave a comment" name="">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+              </article>
+            </div>
+            <div class="col-3"></div>      
+                
+              
+          </div>
+
+          <div class="row" style="background-color: #E2E2E2;">
+            <div class="col-3"></div>
+            <div class="col-6">
+              <article>
+                
+                <div class="headel">
+                  <img src="/xampp/htdocs/Proyecto_VF/img/Koala.jpg"  class="rounded-circle float-left" id="Koala"  width="30px" height="30px">
+                    <p class="d-inline-block user">   <strong>Koalauser</strong></p>
+                  
+                </div>
+                  <div>
+                    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3ECMYe6j8_b5hDNTbQKHbiadHFYT5p4K7oKEo_nYEitiLdwp3" alt="Card image cap">
+
+                    
+                  </div>
+                  <div class="postbody">
+                  <p>23 likes</p>
+                  <p class="card-text">This is my first photo in this feed, this is a multi line comment for testing purposes. I am learning to code with breathecode. </p>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i> 
+                  <input type="text" class="comment" placeholder="leave a comment" name="">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </div>
+
+              </article>
+                
+              
+            </div>
+            <div class="col-3"></div>
+          </div>
+          <div class="row" style="background-color: #E2E2E2;">
+            <div class="col-3"></div>
+            <div class="col-6">
+              <article>
+                
+                <div class="headel">
+                  <img src="/xampp/htdocs/Proyecto_VF/img/Koala.jpg"  class="rounded-circle float-left" id="Koala"  width="30px" height="30px">
+                  <p class="d-inline-block user">   <strong>Koalauser</strong></p>
+                  
+                </div>
+                <div>
+                  <img class="card-img-top" src="http://www.baluart.net/files/images/3271/unsplash.jpg" alt="Card image cap">
+
+                    
+                </div>
+                <div class="postbody">
+                  <p>23 likes</p>
+                  <p class="card-text">This is my first photo in this feed, this is a multi line comment for testing purposes. I am learning to code with breathecode. </p>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i> 
+                  <input type="text" class="comment" placeholder="leave a comment" name="">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+              </article>
+            </div>
+            <div class="col-3"></div>      
+                
+              
+          </div>
+          <div class="row" style="background-color: #E2E2E2;">
+            <div class="col-3"></div>
+            <div class="col-6">
+              <article>
+                
+                <div class="headel">
+                  <img src="/xampp/htdocs/Proyecto_VF/img/Koala.jpg"  class="rounded-circle float-left" id="Koala"  width="30px" height="30px">
+                  <p class="d-inline-block user">   <strong>Koalauser</strong></p>
+                  
+                </div>
+                <div>
+                  <img class="card-img-top" src="https://guiadev.com/imagenes//2016/11/imagenes-gratis-sin-copyright.jpg" alt="Card image cap">
+
+                    
+                </div>
+                <div class="postbody">
+                  <p>23 likes</p>
+                  <p class="card-text">This is my first photo in this feed, this is a multi line comment for testing purposes. I am learning to code with breathecode. </p>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i> 
+                  <input type="text" class="comment" placeholder="leave a comment" name="">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+              </article>
+            </div>
+            <div class="col-3"></div>      
+                
+              
+          </div>
+          <div class="row" style="background-color: #E2E2E2;">
+            <div class="col-3"></div>
+            <div class="col-6">
+              <article>
+                
+                <div class="headel">
+                  <img src="/xampp/htdocs/Proyecto_VF/img/Koala.jpg"  class="rounded-circle float-left" id="Koala"  width="30px" height="30px">
+                  <p class="d-inline-block user">   <strong>Koalauser</strong></p>
+                  
+                </div>
+                <div>
+                  <img class="card-img-top" src="https://www.snailarts.com/wp-content/uploads/2016/10/musica-sin-copyright-gratis.jpg" alt="Card image cap">
+
+                    
+                </div>
+                <div class="postbody">
+                  <p>23 likes</p>
+                  <p class="card-text">This is my first photo in this feed, this is a multi line comment for testing purposes. I am learning to code with breathecode. </p>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i> 
+                  <input type="text" class="comment" placeholder="leave a comment" name="">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+              </article>
+            </div>
+            <div class="col-3"></div>      
+                
+              
+          </div>
+          <div class="row" style="background-color: #E2E2E2;">
+            <div class="col-3"></div>
+            <div class="col-6">
+              <article>
+                
+                <div class="headel">
+                  <img src="/xampp/htdocs/Proyecto_VF/img/Koala.jpg"  class="rounded-circle float-left" id="Koala"  width="30px" height="30px">
+                  <p class="d-inline-block user">   <strong>Koalauser</strong></p>
+                  
+                </div>
+                <div>
+                  <img class="card-img-top" src="https://www.freeaudiolibrary.com/img/leoblog/b/lg-b-musica%20sin%20copyright.png" alt="Card image cap">
+
+                    
+                </div>
+                <div class="postbody">
+                  <p>23 likes</p>
+                  <p class="card-text">This is my first photo in this feed, this is a multi line comment for testing purposes. I am learning to code with breathecode. </p>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i> 
+                  <input type="text" class="comment" placeholder="leave a comment" name="">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+              </article>
+            </div>
+            <div class="col-3"></div>      
+                
+              
+          </div>
+          <div class="row" style="background-color: #E2E2E2;">
+            <div class="col-3"></div>
+            <div class="col-6">
+              <article>
+                
+                <div class="headel">
+                  <img src="/xampp/htdocs/Proyecto_VF/img/Koala.jpg"  class="rounded-circle float-left" id="Koala"  width="30px" height="30px">
+                  <p class="d-inline-block user">   <strong>Koalauser</strong></p>
+                  
+                </div>
+                <div>
+                  <img class="card-img-top" src="https://www.snailarts.com/wp-content/uploads/2017/01/musica-sin-copyright-para-gameplays.jpg" alt="Card image cap">
+
+                    
+                </div>
+                <div class="postbody">
+                  <p>23 likes</p>
+                  <p class="card-text">This is my first photo in this feed, this is a multi line comment for testing purposes. I am learning to code with breathecode. </p>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i> 
+                  <input type="text" class="comment" placeholder="leave a comment" name="">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+              </article>
+            </div>
+            <div class="col-3"></div>      
+                
+              
+          </div>
+          <div class="row" style="background-color: #E2E2E2;">
+            <div class="col-3"></div>
+            <div class="col-6">
+              <article>
+                
+                <div class="headel">
+                  <img src="/xampp/htdocs/Proyecto_VF/img/Koala.jpg"  class="rounded-circle float-left" id="Koala"  width="30px" height="30px">
+                  <p class="d-inline-block user">   <strong>Koalauser</strong></p>
+                  
+                </div>
+                <div>
+                  <img class="card-img-top" src="https://www.hoteldoncarmelo.es/wp-content/uploads/2013/05/flores-campo-rosas-imagenes-sin-copyright.jpg" alt="Card image cap">
+
+                    
+                </div>
+                <div class="postbody">
+                  <p>23 likes</p>
+                  <p class="card-text">This is my first photo in this feed, this is a multi line comment for testing purposes. I am learning to code with breathecode. </p>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i> 
+                  <input type="text" class="comment" placeholder="leave a comment" name="">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+              </article>
+            </div>
+            <div class="col-3"></div>      
+                
+              
+          </div>
+          <div class="row" style="background-color: #E2E2E2;">
+            <div class="col-3"></div>
+            <div class="col-6">
+              <article>
+                
+                <div class="headel">
+                  <img src="/xampp/htdocs/Proyecto_VF/img/Koala.jpg"  class="rounded-circle float-left" id="Koala"  width="30px" height="30px">
+                  <p class="d-inline-block user">   <strong>Koalauser</strong></p>
+                  
+                </div>
+                <div>
+                  <img class="card-img-top" src="https://i.ytimg.com/vi/D5a10x-7kX4/maxresdefault.jpg" alt="Card image cap">
+
+                    
+                </div>
+                <div class="postbody">
+                  <p>23 likes</p>
+                  <p class="card-text">This is my first photo in this feed, this is a multi line comment for testing purposes. I am learning to code with breathecode. </p>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i> 
+                  <input type="text" class="comment" placeholder="leave a comment" name="">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+              </article>
+            </div>
+            <div class="col-3"></div>      
+                
+              
+          </div>
+          <div class="row" style="background-color: #E2E2E2;">
+            <div class="col-3"></div>
+            <div class="col-6">
+              <article>
+                
+                <div class="headel">
+                  <img src="/xampp/htdocs/Proyecto_VF/img/Koala.jpg"  class="rounded-circle float-left" id="Koala"  width="30px" height="30px">
+                  <p class="d-inline-block user">   <strong>Koalauser</strong></p>
+                  
+                </div>
+                <div>
+                  <img class="card-img-top" src="http://wordpress-cdn.eadbox.com/2017/10/25111312/musicas_sem_copyright.png" alt="Card image cap">
+
+                    
+                </div>
+                <div class="postbody">
+                  <p>23 likes</p>
+                  <p class="card-text">This is my first photo in this feed, this is a multi line comment for testing purposes. I am learning to code with breathecode. </p>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i> 
+                  <input type="text" class="comment" placeholder="leave a comment" name="">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+              </article>
+            </div>
+            <div class="col-3"></div>      
+                
+              
+          </div>
+          <div class="row" style="background-color: #E2E2E2;">
+            <div class="col-3"></div>
+            <div class="col-6">
+              <article>
+                
+                <div class="headel">
+                  <img src="/xampp/htdocs/Proyecto_VF/img/Koala.jpg"  class="rounded-circle float-left" id="Koala"  width="30px" height="30px">
+                  <p class="d-inline-block user">   <strong>Koalauser</strong></p>
+                  
+                </div>
+                <div>
+                  <img class="card-img-top" src="http://www.educaciontrespuntocero.com/wp-content/uploads/2016/05/painting-pixabay-696x418.jpg" alt="Card image cap">
+
+                    
+                </div>
+                <div class="postbody">
+                  <p>23 likes</p>
+                  <p class="card-text">This is my first photo in this feed, this is a multi line comment for testing purposes. I am learning to code with breathecode. </p>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i> 
+                  <input type="text" class="comment" placeholder="leave a comment" name="">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+              </article>
+            </div>
+            <div class="col-3"></div>      
+                
+              
+          </div>
+          <div class="row" style="background-color: #E2E2E2;">
+            <div class="col-3"></div>
+            <div class="col-6">
+              <article>
+                
+                <div class="headel">
+                  <img src="/xampp/htdocs/Proyecto_VF/img/Koala.jpg"  class="rounded-circle float-left" id="Koala"  width="30px" height="30px">
+                  <p class="d-inline-block user">   <strong>Koalauser</strong></p>
+                  
+                </div>
+                <div>
+                  <img class="card-img-top" src="https://buhomag-cms.imgix.net/wp-content/uploads/2017/06/09120754/viajar-gratis-20000-euros-1.jpg?w=1250&fit=max" alt="Card image cap">
+
+                    
+                </div>
+                <div class="postbody">
+                  <p>23 likes</p>
+                  <p class="card-text">This is my first photo in this feed, this is a multi line comment for testing purposes. I am learning to code with breathecode. </p>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i> 
+                  <input type="text" class="comment" placeholder="leave a comment" name="">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+              </article>
+            </div>
+            <div class="col-3"></div>      
+                
+              
+          </div>
+
+        </div>
+        <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          
+          <div class="row">
+            
+              <img class="gpics" src="https://st-listas.20minutos.es/images/2014-12/390410/4588247_640px.jpg?1417860326">                    
+              <img class="gpics" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3ECMYe6j8_b5hDNTbQKHbiadHFYT5p4K7oKEo_nYEitiLdwp3">            
+              <img class="gpics" src="http://www.baluart.net/files/images/3271/unsplash.jpg">              
+                        
+          </div>
+          <div class="row">
+
+            <img class="gpics" src="https://guiadev.com/imagenes//2016/11/imagenes-gratis-sin-copyright.jpg" >
+            <img class="gpics" src="https://www.snailarts.com/wp-content/uploads/2016/10/musica-sin-copyright-gratis.jpg">
+            <img class="gpics" src="https://www.freeaudiolibrary.com/img/leoblog/b/lg-b-musica%20sin%20copyright.png">
+            
+          </div>
+          <div class="row">
+
+            <img class="gpics" src="https://www.snailarts.com/wp-content/uploads/2017/01/musica-sin-copyright-para-gameplays.jpg">
+            <img class="gpics" src="https://www.hoteldoncarmelo.es/wp-content/uploads/2013/05/flores-campo-rosas-imagenes-sin-copyright.jpg">
+            <img class="gpics" src="https://i.ytimg.com/vi/D5a10x-7kX4/maxresdefault.jpg">
+            
+          </div>
+          <div class="row">
+
+            <img class="gpics" src="http://wordpress-cdn.eadbox.com/2017/10/25111312/musicas_sem_copyright.png">
+            <img class="gpics" src="http://www.educaciontrespuntocero.com/wp-content/uploads/2016/05/painting-pixabay-696x418.jpg">
+            <img class="gpics" src="https://buhomag-cms.imgix.net/wp-content/uploads/2017/06/09120754/viajar-gratis-20000-euros-1.jpg?w=1250&fit=max">
+            
+          </div>
+        </div>        
+      </div>
+
+
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
